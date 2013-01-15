@@ -44,6 +44,17 @@ git load
 
 and git will pull your latest save and apply to the working directory without any superfluous commits. It's beautiful.
 
+## Configuration
+
+By default, `git-save` will save to/load from `origin/wip`. You can change this by running:
+
+```
+git config save.remote origin
+git config save.branch <NOT WIP>
+```
+
+You can add the `--global` flag if you want to set the remote or branch for all of your repos.
+
 ### Contributions
 
 Contributions are welcome. Please be kind and branch before you pull request.
