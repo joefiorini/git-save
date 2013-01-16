@@ -13,7 +13,7 @@ default_branch="wip"
 
 [ $1 ] && message=" $message ($1)"
 git add -A .
-git ci -m $message
+git commit -m $message
 git push $remote +head:$branch
 git reset head^
 
